@@ -2,8 +2,8 @@
 public class Etudiant {
 
 		private int matricule;
-	    private String nom;
-	    private String prenom;
+	    private String nom;  //LOUAKED 
+	    private String prenom;   //Yasmine
 	    private String email ;
 	    private String pwd;
 	    private int nbLivreMensuel_Autorise;
