@@ -3,15 +3,34 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
-public class EtudiantService {
+public class EtudiantService implements InterfaceEtudR {
+	 
+	IEtudRepository IStudRep;
+	IUnivRepository IUnivRep; 
+	Ijour journal;
+	IEtudiantFactory EtudFact;
+	
+	public EtudiantService(IEtudRepository IStudRep, IUnivRepository IUnivRep, Ijour journal,IEtudiantFactory EtudFact)
+	
+	{
+		IStudRep=IStudREP;
+		IUnivRep=IUnivREP;
+		journal= jr;
+		EtudFact=Efact;
+	}
 	
 	
 	boolean inscription (int matricule, String nom, String prénom, String email,String pwd, int id_universite) throws SQLException	
 	{
-		EtudiantRepository StudRep= new EtudiantRepository();
-	    UniversiteRepository UnivRep= new UniversiteRepository();
-	    Etudiant stud = new Etudiant(matricule, nom, prénom, email,pwd,id_universite);
-	    Universite univ=UnivRep.GetById(id_universite);
+		Etudiant etud = EtudFact.creer(matricule, nom, prenom, email, pwd, id_universite);
+		journal.log("début de l'opération d'ajout de l'étudiant avec matricule "+matricule);
+		
+		if(IStudRep.ExistsEmail(email) || IStudRep.ExistsMat(matricule)
+				{
+			journal.log("Log : echec d'ajout" +matricule);
+			return false;
+				}
+		
 	    
 	    System.out.println("Log: début de l'opération d'ajout de l'étudiant avec matricule "+matricule);
 	    
