@@ -3,7 +3,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
-public class EtudiantService implements InterfaceEtudR {
+public class EtudiantService  {
 	 
 	IEtudRepository IStudRep;
 	IUnivRepository IUnivRep; 

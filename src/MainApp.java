@@ -4,6 +4,8 @@ public class MainApp {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+    IJournal IEcran=new outPut_Msg();
+    IJournal IFichier=new outPut_Msg();
 
 
 		EtudiantService serv=new EtudiantService();
