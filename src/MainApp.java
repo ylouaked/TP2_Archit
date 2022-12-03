@@ -6,6 +6,11 @@ public class MainApp {
 		// TODO Auto-generated method stub
     IJournal IEcran=new outPut_Msg();
     IJournal IFichier=new outPut_Msg();
+    
+    if(email == null || email.length() == 0)
+    {
+    	return false;
+    }                       
 
 
 		EtudiantService serv=new EtudiantService();

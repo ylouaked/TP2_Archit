@@ -19,9 +19,18 @@ public class Etudiant {
 			this.email = email;
 			this.pwd = pwd;
 			this.id_universite = id_universite;
+
+			 if (univ.getPack() == TypePackage.Standard)
+		     {
+		          stud.setNbLivreMensuel_Autorise(10);
+		     }
+		     else if (univ.getPack() == TypePackage.Premium)
+		     {
+		    	 stud.setNbLivreMensuel_Autorise(10*2);
+		     }     
 		}
 
-
+		
 		public int getMatricule() {
 			return matricule;
 		}

@@ -34,10 +34,7 @@ public class EtudiantService  {
 	    
 	    System.out.println("Log: début de l'opération d'ajout de l'étudiant avec matricule "+matricule);
 	    
-	    if(email == null || email.length() == 0)
-	    {
-	    	return false;
-	    }
+	   
 	    
 	    if (StudRep.Exists(matricule))
 	    {
@@ -49,16 +46,7 @@ public class EtudiantService  {
 	        return false;
 	    }
 		
-		
-		
-		 if (univ.getPack() == TypePackage.Standard)
-	     {
-	          stud.setNbLivreMensuel_Autorise(10);
-	     }
-	     else if (univ.getPack() == TypePackage.Premium)
-	     {
-	    	 stud.setNbLivreMensuel_Autorise(10*2);
-	     }                           
+		                      
 	     
 		 StudRep.add(stud);
 		 System.out.println("Log: Fin de l'opération d'ajout de l'étudiant avec matricule "+matricule);
