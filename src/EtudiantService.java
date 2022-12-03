@@ -55,8 +55,12 @@ public class EtudiantService  {
 		
 	}
 	
+	public void AjouterBonus()
+	{ 	ArrayList<EtudiantLimite> EtudiantLimit 
+		for (EtudiantLimite E = EtudiantLimit
+		E.AjouterBonus();
 	
-	
+	}
 
 public ArrayList<Etudiant> GetEtudiantParUniversitye()
 {

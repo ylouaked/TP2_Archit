@@ -110,6 +110,13 @@ public class Etudiant {
 			this.pwd = pwd;
 		}
 
+		public void AjouterBonus(PackageType Pt) {
+			if(pt == PackageType.Standard)
+			{ nbLivreMensuel +=5; }
+			else if ( pt == PackageType.Premium)
+			{ nbLivreMensuel +=10;}
+		}
+		
 		
 		
 	    }
