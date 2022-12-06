@@ -1,5 +1,4 @@
-
-public class Etudiant {
+public abstract class Etudiant {
 
 		private int matricule;
 	    private String nom;  //LOUAKED 
@@ -110,13 +109,6 @@ public class Etudiant {
 			this.pwd = pwd;
 		}
 
-		public void AjouterBonus(PackageType Pt) {
-			if(pt == PackageType.Standard)
-			{ nbLivreMensuel +=5; }
-			else if ( pt == PackageType.Premium)
-			{ nbLivreMensuel +=10;}
-		}
-		
 		
 		
 	    }
