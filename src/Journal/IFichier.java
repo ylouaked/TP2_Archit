@@ -1,4 +1,4 @@
-
+package Journal;
 public class IFichier implements IJournal {
 	private final Path path;
 

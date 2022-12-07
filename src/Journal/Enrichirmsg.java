@@ -1,3 +1,4 @@
+package Journal;
 import java.text.SimpleDateFormat;
 public class Enrichirmsg implements IJournal {
 IJournal Journal;

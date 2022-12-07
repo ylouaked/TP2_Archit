@@ -1,4 +1,4 @@
-
+package Journal;
 public class TypesOutPut implements IJournal{
 	IJournal journal1;
 	IJournal journal2;
